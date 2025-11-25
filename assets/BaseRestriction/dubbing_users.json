@@ -1,0 +1,643 @@
+[
+  {
+    "userId": "na_001",
+    "username": "voice_artist_001",
+    "displayName": "Sarah Mitchell",
+    "bio": "Professional voice actor specializing in commercial and narrative work. Bringing stories to life with authentic emotion! 🎙️",
+    "voiceType": "Commercial & Narrative",
+    "dubbingType": "Lines",
+    "experienceYears": 5,
+    "sex": "male",
+    "voiceStyle": ["Warm", "Professional", "Conversational"],
+    "specializations": ["Commercials", "Audiobooks", "Documentaries"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_001/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_001/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_001/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_001/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_001/work.mp3"
+    },
+    "postTitle": "New Commercial Voice Over Project",
+    "postContent": "Just wrapped up an exciting commercial voice over project! Love bringing brands to life through authentic storytelling. Every project is a new adventure in voice acting. 🎬 #voiceover #commercial #voiceacting",
+    "workoutType": "Voice Acting",
+    "tags": ["voiceover", "commercial", "voiceacting", "narrative", "storytelling"],
+    "likes": 0
+  },
+  {
+    "userId": "na_002",
+    "username": "voice_artist_002",
+    "displayName": "Michael Chen",
+    "bio": "Award-winning voice actor with expertise in character voices and animation. Creating memorable characters one voice at a time! 🎭",
+    "voiceType": "Character & Animation",
+    "dubbingType": "Anime",
+    "experienceYears": 8,
+    "sex": "male",
+    "voiceStyle": ["Dynamic", "Character-driven", "Expressive"],
+    "specializations": ["Animation", "Video Games", "Character Voices"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_002/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_002/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_002/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_002/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_002/work.mp3"
+    },
+    "postTitle": "Character Voice Demo Reel",
+    "postContent": "Working on some exciting character voices for an upcoming animation project! Each character has a unique personality that comes through in their voice. The magic of voice acting! ✨ #animation #character #voiceacting",
+    "workoutType": "Voice Acting",
+    "tags": ["animation", "character", "voiceacting", "gaming", "creative"],
+    "likes": 0
+  },
+  {
+    "userId": "na_003",
+    "username": "voice_artist_003",
+    "displayName": "Emma Rodriguez",
+    "bio": "Bilingual voice talent specializing in e-learning and corporate narration. Making complex topics accessible and engaging! 📚",
+    "voiceType": "E-Learning & Corporate",
+    "dubbingType": "Lines",
+    "experienceYears": 6,
+    "sex": "male",
+    "voiceStyle": ["Clear", "Educational", "Professional"],
+    "specializations": ["E-Learning", "Corporate Training", "Explainer Videos"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_003/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_003/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_003/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_003/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_003/work.mp3"
+    },
+    "postTitle": "E-Learning Voice Over Series",
+    "postContent": "Completed a comprehensive e-learning series this week! Love helping people learn through engaging narration. Education meets entertainment! 🎓 #elearning #narration #education",
+    "workoutType": "Voice Acting",
+    "tags": ["elearning", "narration", "education", "corporate", "training"],
+    "likes": 0
+  },
+  {
+    "userId": "na_004",
+    "username": "voice_artist_004",
+    "displayName": "James Thompson",
+    "bio": "Deep, resonant voice perfect for documentaries and audiobooks. Bringing history and stories to life with powerful narration! 📖",
+    "voiceType": "Documentary & Audiobook",
+    "dubbingType": "Lines",
+    "experienceYears": 10,
+    "sex": "male",
+    "voiceStyle": ["Deep", "Authoritative", "Narrative"],
+    "specializations": ["Documentaries", "Audiobooks", "Historical Narratives"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_004/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_004/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_004/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_004/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_004/work.mp3"
+    },
+    "postTitle": "Historical Documentary Narration",
+    "postContent": "Just finished narrating a fascinating historical documentary! There's something magical about bringing history to life through voice. Every story deserves to be told with passion! 🎬 #documentary #narration #history",
+    "workoutType": "Voice Acting",
+    "tags": ["documentary", "narration", "history", "audiobook", "storytelling"],
+    "likes": 0
+  },
+  {
+    "userId": "na_005",
+    "username": "voice_artist_005",
+    "displayName": "Olivia Martinez",
+    "bio": "Versatile voice actor with a passion for radio commercials and podcast intros. Creating memorable first impressions! 🎧",
+    "voiceType": "Radio & Podcast",
+    "dubbingType": "Lines",
+    "experienceYears": 4,
+    "sex": "male",
+    "voiceStyle": ["Energetic", "Friendly", "Engaging"],
+    "specializations": ["Radio Commercials", "Podcast Intros", "Promotional Content"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_005/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_005/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_005/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_005/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_005/work.mp3"
+    },
+    "postTitle": "Radio Commercial Campaign",
+    "postContent": "Excited to share my latest radio commercial campaign! Radio is such a powerful medium - you have to capture attention with just your voice. Love the challenge! 📻 #radio #commercial #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["radio", "commercial", "voiceover", "podcast", "promotional"],
+    "likes": 0
+  },
+  {
+    "userId": "na_006",
+    "username": "voice_artist_006",
+    "displayName": "David Park",
+    "bio": "Tech-savvy voice actor specializing in IVR systems and phone prompts. Making technology more human-friendly! 📱",
+    "voiceType": "IVR & Phone Systems",
+    "dubbingType": "Lines",
+    "experienceYears": 7,
+    "sex": "male",
+    "voiceStyle": ["Clear", "Professional", "Friendly"],
+    "specializations": ["IVR Systems", "Phone Prompts", "Tech Narratives"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_006/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_006/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_006/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_006/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_006/work.mp3"
+    },
+    "postTitle": "IVR System Voice Over",
+    "postContent": "Just completed a comprehensive IVR system voice over project! Making phone systems more user-friendly, one prompt at a time. Technology should feel natural! 🎙️ #ivr #tech #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["ivr", "tech", "voiceover", "phone", "systems"],
+    "likes": 0
+  },
+  {
+    "userId": "na_007",
+    "username": "voice_artist_007",
+    "displayName": "Sophie Anderson",
+    "bio": "Warm and inviting voice perfect for meditation apps and wellness content. Creating peaceful audio experiences! 🧘",
+    "voiceType": "Wellness & Meditation",
+    "dubbingType": "Mood",
+    "experienceYears": 5,
+    "sex": "male",
+    "voiceStyle": ["Calm", "Soothing", "Meditative"],
+    "specializations": ["Meditation Apps", "Wellness Content", "Relaxation Audio"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_007/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_007/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_007/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_007/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_007/work.mp3"
+    },
+    "postTitle": "Meditation App Voice Over",
+    "postContent": "Working on a beautiful meditation app project! There's something special about using your voice to help people find peace and relaxation. Mindfulness through voice! ✨ #meditation #wellness #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["meditation", "wellness", "voiceover", "relaxation", "mindfulness"],
+    "likes": 0
+  },
+  {
+    "userId": "na_008",
+    "username": "voice_artist_008",
+    "displayName": "Robert Williams",
+    "bio": "Dynamic voice actor specializing in sports commentary and live event narration. Bringing energy and excitement to every project! ⚽",
+    "voiceType": "Sports & Live Events",
+    "dubbingType": "Mood",
+    "experienceYears": 9,
+    "sex": "female",
+    "voiceStyle": ["Energetic", "Dynamic", "Exciting"],
+    "specializations": ["Sports Commentary", "Live Events", "Promotional Videos"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_008/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_008/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_008/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_008/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_008/work.mp3"
+    },
+    "postTitle": "Sports Event Voice Over",
+    "postContent": "Just finished an exciting sports event voice over! The energy and passion in sports narration is unmatched. Every game tells a story! 🏆 #sports #commentary #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["sports", "commentary", "voiceover", "events", "dynamic"],
+    "likes": 0
+  },
+  {
+    "userId": "na_009",
+    "username": "voice_artist_009",
+    "displayName": "Isabella Garcia",
+    "bio": "Multilingual voice talent with expertise in dubbing and localization. Bridging cultures through voice! 🌍",
+    "voiceType": "Dubbing & Localization",
+    "dubbingType": "Anime",
+    "experienceYears": 6,
+    "sex": "male",
+    "voiceStyle": ["Versatile", "Adaptive", "Cultural"],
+    "specializations": ["Dubbing", "Localization", "Multilingual Content"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_009/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_009/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_009/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_009/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_009/work.mp3"
+    },
+    "postTitle": "Multilingual Dubbing Project",
+    "postContent": "Completed a complex multilingual dubbing project this week! Love bringing content to different cultures while maintaining authenticity. Voice knows no boundaries! 🎬 #dubbing #localization #multilingual",
+    "workoutType": "Voice Acting",
+    "tags": ["dubbing", "localization", "multilingual", "translation", "cultural"],
+    "likes": 0
+  },
+  {
+    "userId": "na_010",
+    "username": "voice_artist_010",
+    "displayName": "Christopher Lee",
+    "bio": "Professional narrator with a passion for mystery and thriller audiobooks. Creating suspense through voice! 🔍",
+    "voiceType": "Audiobook & Mystery",
+    "dubbingType": "Lines",
+    "experienceYears": 8,
+    "sex": "male",
+    "voiceStyle": ["Mysterious", "Engaging", "Suspenseful"],
+    "specializations": ["Audiobooks", "Mystery Narratives", "Thriller Content"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_010/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_010/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_010/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_010/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_010/work.mp3"
+    },
+    "postTitle": "Thriller Audiobook Narration",
+    "postContent": "Just wrapped up an intense thriller audiobook! Building suspense through voice is an art form. Every pause, every inflection matters. The power of storytelling! 📚 #audiobook #thriller #narration",
+    "workoutType": "Voice Acting",
+    "tags": ["audiobook", "thriller", "narration", "mystery", "storytelling"],
+    "likes": 0
+  },
+  {
+    "userId": "na_011",
+    "username": "voice_artist_011",
+    "displayName": "Amanda Foster",
+    "bio": "Bright and cheerful voice perfect for children's content and educational videos. Making learning fun! 🎈",
+    "voiceType": "Children's & Educational",
+    "dubbingType": "Lines",
+    "experienceYears": 5,
+    "sex": "male",
+    "voiceStyle": ["Cheerful", "Friendly", "Energetic"],
+    "specializations": ["Children's Content", "Educational Videos", "Kids' Apps"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_011/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_011/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_011/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_011/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_011/work.mp3"
+    },
+    "postTitle": "Children's Educational Series",
+    "postContent": "Working on a delightful children's educational series! There's nothing more rewarding than making learning fun and engaging for kids. Voice acting for children is pure joy! 🎨 #children #education #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["children", "education", "voiceover", "kids", "learning"],
+    "likes": 0
+  },
+  {
+    "userId": "na_012",
+    "username": "voice_artist_012",
+    "displayName": "Daniel Kim",
+    "bio": "Tech-focused voice actor specializing in product demos and software tutorials. Making technology accessible! 💻",
+    "voiceType": "Tech & Product Demos",
+    "dubbingType": "Lines",
+    "experienceYears": 6,
+    "sex": "male",
+    "voiceStyle": ["Clear", "Technical", "Approachable"],
+    "specializations": ["Product Demos", "Software Tutorials", "Tech Content"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_012/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_012/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_012/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_012/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_012/work.mp3"
+    },
+    "postTitle": "Software Tutorial Voice Over",
+    "postContent": "Just completed a comprehensive software tutorial voice over! Breaking down complex tech concepts into clear, understandable narration. Technology made simple! 🚀 #tech #tutorial #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["tech", "tutorial", "voiceover", "software", "product"],
+    "likes": 0
+  },
+  {
+    "userId": "na_013",
+    "username": "voice_artist_013",
+    "displayName": "Rachel Taylor",
+    "bio": "Elegant and sophisticated voice perfect for luxury brands and high-end commercials. Elevating brands through voice! ✨",
+    "voiceType": "Luxury & Premium Brands",
+    "dubbingType": "Mood",
+    "experienceYears": 7,
+    "sex": "male",
+    "voiceStyle": ["Sophisticated", "Elegant", "Premium"],
+    "specializations": ["Luxury Brands", "Premium Commercials", "High-End Content"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_013/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_013/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_013/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_013/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_013/work.mp3"
+    },
+    "postTitle": "Luxury Brand Commercial",
+    "postContent": "Just finished a stunning luxury brand commercial! Working with premium brands requires a special touch - elegance, sophistication, and authenticity. Voice as an art form! 💎 #luxury #premium #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["luxury", "premium", "voiceover", "brands", "elegant"],
+    "likes": 0
+  },
+  {
+    "userId": "na_014",
+    "username": "voice_artist_014",
+    "displayName": "Thomas Brown",
+    "bio": "Versatile voice actor with expertise in medical and scientific narration. Making complex topics understandable! 🔬",
+    "voiceType": "Medical & Scientific",
+    "dubbingType": "Lines",
+    "experienceYears": 9,
+    "sex": "male",
+    "voiceStyle": ["Precise", "Professional", "Clear"],
+    "specializations": ["Medical Content", "Scientific Narratives", "Healthcare Videos"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_014/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_014/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_014/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_014/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_014/work.mp3"
+    },
+    "postTitle": "Medical Training Video Narration",
+    "postContent": "Completed a detailed medical training video narration this week! Medical content requires precision, clarity, and empathy. Honored to contribute to healthcare education! 🏥 #medical #healthcare #narration",
+    "workoutType": "Voice Acting",
+    "tags": ["medical", "healthcare", "narration", "scientific", "education"],
+    "likes": 0
+  },
+  {
+    "userId": "na_015",
+    "username": "voice_artist_015",
+    "displayName": "Jessica White",
+    "bio": "Energetic and youthful voice perfect for social media content and influencer videos. Creating engaging digital experiences! 📱",
+    "voiceType": "Social Media & Digital",
+    "dubbingType": "Mood",
+    "experienceYears": 4,
+    "sex": "male",
+    "voiceStyle": ["Energetic", "Youthful", "Trendy"],
+    "specializations": ["Social Media", "Influencer Content", "Digital Marketing"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_015/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_015/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_015/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_015/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_015/work.mp3"
+    },
+    "postTitle": "Social Media Voice Over Campaign",
+    "postContent": "Just launched an exciting social media voice over campaign! Digital content needs that perfect energy and authenticity. Love creating voices that connect with Gen Z! 🎯 #socialmedia #digital #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["socialmedia", "digital", "voiceover", "influencer", "trendy"],
+    "likes": 0
+  },
+  {
+    "userId": "na_016",
+    "username": "voice_artist_016",
+    "displayName": "Alexander Grant",
+    "bio": "Commanding voice perfect for corporate presentations and executive communications. Leading with authority! 🎯",
+    "voiceType": "Corporate & Executive",
+    "dubbingType": "Lines",
+    "experienceYears": 10,
+    "sex": "male",
+    "voiceStyle": ["Authoritative", "Professional", "Confident"],
+    "specializations": ["Corporate Presentations", "Executive Communications", "Business Content"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_016/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_016/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_016/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_016/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_016/work.mp3"
+    },
+    "postTitle": "Executive Presentation Voice Over",
+    "postContent": "Just completed a high-level executive presentation voice over! Corporate communications require confidence, clarity, and authority. Leading through voice! 💼 #corporate #executive #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["corporate", "executive", "voiceover", "business", "professional"],
+    "likes": 0
+  },
+  {
+    "userId": "na_017",
+    "username": "voice_artist_017",
+    "displayName": "Maya Patel",
+    "bio": "Warm and empathetic voice specializing in healthcare communications and patient education. Connecting through compassion! ❤️",
+    "voiceType": "Healthcare & Patient Care",
+    "dubbingType": "Mood",
+    "experienceYears": 6,
+    "sex": "female",
+    "voiceStyle": ["Warm", "Empathetic", "Compassionate"],
+    "specializations": ["Healthcare Communications", "Patient Education", "Medical Narratives"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_017/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_017/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_017/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_017/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_017/work.mp3"
+    },
+    "postTitle": "Patient Education Video",
+    "postContent": "Completed a compassionate patient education video this week! Healthcare voice work requires empathy, clarity, and warmth. Honored to help patients understand their health better! 🏥 #healthcare #patientcare #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["healthcare", "patientcare", "voiceover", "medical", "compassion"],
+    "likes": 0
+  },
+  {
+    "userId": "na_018",
+    "username": "voice_artist_018",
+    "displayName": "Ryan Murphy",
+    "bio": "Dynamic voice actor specializing in gaming and interactive media. Bringing virtual worlds to life! 🎮",
+    "voiceType": "Gaming & Interactive",
+    "dubbingType": "Game",
+    "experienceYears": 7,
+    "sex": "female",
+    "voiceStyle": ["Dynamic", "Character-driven", "Immersive"],
+    "specializations": ["Video Games", "Interactive Media", "Gaming Content"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_018/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_018/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_018/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_018/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_018/work.mp3"
+    },
+    "postTitle": "Video Game Character Voice Acting",
+    "postContent": "Just finished voicing a character for an exciting new video game! Gaming voice acting is all about creating immersive experiences. Every line brings the game world closer to reality! 🎮 #gaming #voiceacting #interactive",
+    "workoutType": "Voice Acting",
+    "tags": ["gaming", "voiceacting", "interactive", "characters", "virtual"],
+    "likes": 0
+  },
+  {
+    "userId": "na_019",
+    "username": "voice_artist_019",
+    "displayName": "Lily Chen",
+    "bio": "Versatile voice talent with expertise in travel and lifestyle content. Inspiring wanderlust through voice! ✈️",
+    "voiceType": "Travel & Lifestyle",
+    "dubbingType": "Mood",
+    "experienceYears": 5,
+    "sex": "female",
+    "voiceStyle": ["Inspiring", "Warm", "Adventurous"],
+    "specializations": ["Travel Content", "Lifestyle Videos", "Tourism Narratives"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_019/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_019/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_019/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_019/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_019/work.mp3"
+    },
+    "postTitle": "Travel Documentary Voice Over",
+    "postContent": "Just completed a beautiful travel documentary voice over! There's something magical about inspiring people to explore the world through voice. Adventure awaits! 🌍 #travel #lifestyle #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["travel", "lifestyle", "voiceover", "tourism", "adventure"],
+    "likes": 0
+  },
+  {
+    "userId": "na_020",
+    "username": "voice_artist_020",
+    "displayName": "Nathan Scott",
+    "bio": "Professional voice actor specializing in real estate and property narration. Selling dreams through voice! 🏠",
+    "voiceType": "Real Estate & Property",
+    "dubbingType": "Lines",
+    "experienceYears": 6,
+    "sex": "female",
+    "voiceStyle": ["Persuasive", "Professional", "Welcoming"],
+    "specializations": ["Real Estate", "Property Tours", "Commercial Real Estate"],
+    "avatar": {
+      "path": "assets/BaseRestriction/na_020/icon.webp"
+    },
+    "avatarBG": {
+      "path": "assets/BaseRestriction/na_020/iconbg.webp"
+    },
+    "cover": {
+      "path": "assets/BaseRestriction/na_020/cover.webp"
+    },
+    "video": {
+      "path": "assets/BaseRestriction/na_020/dubbing.mp4"
+    },
+    "work": {
+      "path": "assets/BaseRestriction/na_020/work.mp3"
+    },
+    "postTitle": "Luxury Property Tour Voice Over",
+    "postContent": "Just finished a stunning luxury property tour voice over! Real estate narration is about painting a picture with words and voice. Every property has a story to tell! 🏡 #realestate #property #voiceover",
+    "workoutType": "Voice Acting",
+    "tags": ["realestate", "property", "voiceover", "tours", "commercial"],
+    "likes": 0
+  }
+]
+
