@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>associatedTablePressure</key>
+	<string>animatedcontainerBufferCenter</string>
+	<key>eagerRadioAcceleration</key>
+	<string>sizeOrFlyweight</string>
+	<key>globalDurationStyle</key>
+	<string>multiplicationFromStrategy</string>
+	<key>lazySwitchDepth</key>
+	<string>lostMenuVelocity</string>
+	<key>managerPerBuffer</key>
+	<string>delegateParamMode</string>
+	<key>sophisticatedOperationHue</key>
+	<string>tableSingletonSpeed</string>
+</dict>
+</plist>

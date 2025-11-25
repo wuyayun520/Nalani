@@ -1,11 +1,14 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../theme/app_theme.dart';
 import '../services/user_profile_service.dart';
 import 'privacy_policy_page.dart';
 import 'terms_of_service_page.dart';
 import 'about_page.dart';
+import 'nalani_wallet_screen.dart';
+import 'nalani_vip_screen.dart';
 
 class MeTabPage extends StatefulWidget {
   const MeTabPage({super.key});
@@ -155,6 +158,153 @@ class _MeTabPageState extends State<MeTabPage> {
     );
   }
 
+  // 检查VIP状态
+  Future<bool> _checkVipStatus() async {
+    final prefs = await SharedPreferences.getInstance();
+    final isVip = prefs.getBool('nalaniIsVip') ?? false;
+    
+    if (!isVip) {
+      return false;
+    }
+    
+    // 检查VIP是否过期
+    final expiryStr = prefs.getString('nalaniVipExpiry');
+    if (expiryStr != null) {
+      final expiry = DateTime.tryParse(expiryStr);
+      if (expiry != null && expiry.isBefore(DateTime.now())) {
+        // VIP已过期
+        await prefs.setBool('nalaniIsVip', false);
+        return false;
+      }
+    }
+    
+    return true;
+  }
+
+  // 检查并处理VIP访问修改头像
+  Future<void> _checkAndPickAvatar() async {
+    final isVip = await _checkVipStatus();
+    
+    if (isVip) {
+      // VIP用户，直接允许修改头像
+      await _pickAvatar();
+    } else {
+      // 非VIP用户，显示确认对话框
+      if (mounted) {
+        final shouldSubscribe = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: const Text('VIP Required'),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Customizing your avatar requires Nalani Premium subscription.\nWould you like to subscribe?',
+                  style: TextStyle(fontSize: 14),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFFF3D0),
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(
+                      color: const Color(0xFFFF9538),
+                      width: 1,
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Subscription Plans:',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF333333),
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Row(
+                        children: [
+                          const Text(
+                            '• Weekly: ',
+                            style: TextStyle(fontSize: 12, color: Color(0xFF666666)),
+                          ),
+                          const Text(
+                            '\$12.99/week',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFFF9538),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 4),
+                      Row(
+                        children: [
+                          const Text(
+                            '• Monthly: ',
+                            style: TextStyle(fontSize: 12, color: Color(0xFF666666)),
+                          ),
+                          const Text(
+                            '\$49.99/month',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFFF9538),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFFF9538),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: const Text(
+                              'POPULAR',
+                              style: TextStyle(
+                                fontSize: 8,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(false),
+                child: const Text('Cancel'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(true),
+                child: const Text('Subscribe'),
+              ),
+            ],
+          ),
+        );
+
+        if (shouldSubscribe == true && mounted) {
+          // 跳转到VIP订阅页面
+          await Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const VipScreen(),
+            ),
+          );
+        }
+      }
+    }
+  }
+
   Future<void> _pickAvatar() async {
     try {
       final XFile? image = await _imagePicker.pickImage(
@@ -293,75 +443,122 @@ class _MeTabPageState extends State<MeTabPage> {
   }
 
   Widget _buildUserSection() {
-    return GestureDetector(
-      onTap: _pickAvatar,
-      child: Stack(
-        children: [
-          Container(
-            height: 200,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: AppTheme.primaryColor,
-                width: 3,
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
-                  blurRadius: 10,
-                  offset: const Offset(0, 4),
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // 左侧头像
+        Expanded(
+          flex: 3,
+          child: GestureDetector(
+            onTap: _checkAndPickAvatar,
+            child: Stack(
+              children: [
+                Container(
+                  height: 200,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      color: AppTheme.primaryColor,
+                      width: 3,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        blurRadius: 10,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(17),
+                    child: _avatarPath != null
+                        ? Image.file(
+                            File(_avatarPath!),
+                            fit: BoxFit.cover,
+                            width: double.infinity,
+                            errorBuilder: (context, error, stackTrace) {
+                              return _buildDefaultAvatar();
+                            },
+                          )
+                        : Image.asset(
+                            'assets/BaseRestriction/na_001/cover.webp',
+                            fit: BoxFit.cover,
+                            width: double.infinity,
+                            errorBuilder: (context, error, stackTrace) {
+                              return _buildDefaultAvatar();
+                            },
+                          ),
+                  ),
+                ),
+                // 编辑图标
+                Positioned(
+                  right: 12,
+                  bottom: 12,
+                  child: Container(
+                    width: 36,
+                    height: 36,
+                    decoration: BoxDecoration(
+                      color: AppTheme.primaryColor,
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          blurRadius: 8,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                    child: const Icon(
+                      Icons.camera_alt,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ),
                 ),
               ],
             ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(17),
-              child: _avatarPath != null
-                  ? Image.file(
-                      File(_avatarPath!),
-                      fit: BoxFit.cover,
-                      width: double.infinity,
-                      errorBuilder: (context, error, stackTrace) {
-                        return _buildDefaultAvatar();
-                      },
-                    )
-                  : Image.asset(
-                      'assets/BaseRestriction/na_001/cover.webp',
-                      fit: BoxFit.cover,
-                      width: double.infinity,
-                      errorBuilder: (context, error, stackTrace) {
-                        return _buildDefaultAvatar();
-                      },
+          ),
+        ),
+        const SizedBox(width: 12),
+        // 右侧VIP和Wallet图片
+        Expanded(
+          flex: 1,
+          child: Column(
+            children: [
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const VipScreen(),
                     ),
-            ),
-          ),
-          // 编辑图标
-          Positioned(
-            right: 12,
-            bottom: 12,
-            child: Container(
-              width: 36,
-              height: 36,
-              decoration: BoxDecoration(
-                color: AppTheme.primaryColor,
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    blurRadius: 8,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
+                  );
+                },
+                child: Image.asset(
+                  'assets/nalani_me_vip.webp',
+                  fit: BoxFit.contain,
+                ),
               ),
-              child: const Icon(
-                Icons.camera_alt,
-                color: Colors.white,
-                size: 20,
+              const SizedBox(height: 12),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const WalletScreen(),
+                    ),
+                  );
+                },
+                child: Image.asset(
+                  'assets/nalani_me_wallet.webp',
+                  fit: BoxFit.contain,
+                ),
               ),
-            ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 

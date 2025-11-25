@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/dubbing_user.dart';
 import '../services/likes_service.dart';
 import '../services/hidden_videos_service.dart';
@@ -8,6 +9,7 @@ import '../services/blocked_users_service.dart';
 import 'video_player_page.dart';
 import 'ai_character_page.dart';
 import 'popular_users_page.dart';
+import 'nalani_vip_screen.dart';
 
 class HomeTabPage extends StatefulWidget {
   const HomeTabPage({super.key});
@@ -92,6 +94,172 @@ class _HomeTabPageState extends State<HomeTabPage> {
       _userLikes[userId] = updatedLikes;
       _userSelectedEmoji[userId] = newSelectedEmoji;
     });
+  }
+
+  // 检查VIP状态
+  Future<bool> _checkVipStatus() async {
+    final prefs = await SharedPreferences.getInstance();
+    final isVip = prefs.getBool('nalaniIsVip') ?? false;
+    
+    if (!isVip) {
+      return false;
+    }
+    
+    // 检查VIP是否过期
+    final expiryStr = prefs.getString('nalaniVipExpiry');
+    if (expiryStr != null) {
+      final expiry = DateTime.tryParse(expiryStr);
+      if (expiry != null && expiry.isBefore(DateTime.now())) {
+        // VIP已过期
+        await prefs.setBool('nalaniIsVip', false);
+        return false;
+      }
+    }
+    
+    return true;
+  }
+
+  // 检查并处理VIP访问视频
+  Future<void> _checkAndNavigateToVideo(DubbingUser user) async {
+    final isVip = await _checkVipStatus();
+    
+    if (isVip) {
+      // VIP用户，直接跳转
+      if (mounted) {
+        final result = await Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => VideoPlayerPage(
+              videoPath: user.videoPath,
+              userDisplayName: user.displayName,
+              postTitle: user.postTitle,
+              userId: user.userId,
+            ),
+          ),
+        );
+        if (result == true) {
+          final hiddenVideos = await _hiddenVideosService.getHiddenVideos();
+          if (mounted) {
+            setState(() {
+              _hiddenVideos = hiddenVideos;
+            });
+          }
+        }
+      }
+    } else {
+      // 非VIP用户，显示确认对话框
+      if (mounted) {
+        final shouldSubscribe = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: const Text('VIP Required'),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'This feature requires Nalani Premium subscription.\nWould you like to subscribe?',
+                  style: TextStyle(fontSize: 14),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFFF3D0),
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(
+                      color: const Color(0xFFFF9538),
+                      width: 1,
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Subscription Plans:',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF333333),
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Row(
+                        children: [
+                          const Text(
+                            '• Weekly: ',
+                            style: TextStyle(fontSize: 12, color: Color(0xFF666666)),
+                          ),
+                          const Text(
+                            '\$12.99/week',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFFF9538),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 4),
+                      Row(
+                        children: [
+                          const Text(
+                            '• Monthly: ',
+                            style: TextStyle(fontSize: 12, color: Color(0xFF666666)),
+                          ),
+                          const Text(
+                            '\$49.99/month',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFFF9538),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFFF9538),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: const Text(
+                              'POPULAR',
+                              style: TextStyle(
+                                fontSize: 8,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(false),
+                child: const Text('Cancel'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(true),
+                child: const Text('Subscribe'),
+              ),
+            ],
+          ),
+        );
+
+        if (shouldSubscribe == true && mounted) {
+          // 跳转到VIP订阅页面
+          await Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const VipScreen(),
+            ),
+          );
+        }
+      }
+    }
   }
 
   @override
@@ -312,24 +480,7 @@ class _HomeTabPageState extends State<HomeTabPage> {
             child: AspectRatio(
               aspectRatio: 16 / 9,
               child: GestureDetector(
-                onTap: () async {
-                  final result = await Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => VideoPlayerPage(
-                        videoPath: user.videoPath,
-                        userDisplayName: user.displayName,
-                        postTitle: user.postTitle,
-                        userId: user.userId,
-                      ),
-                    ),
-                  );
-                  if (result == true) {
-                    final hiddenVideos = await _hiddenVideosService.getHiddenVideos();
-                    setState(() {
-                      _hiddenVideos = hiddenVideos;
-                    });
-                  }
-                },
+                onTap: () => _checkAndNavigateToVideo(user),
                 child: Stack(
                   children: [
                     Image.asset(

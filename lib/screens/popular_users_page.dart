@@ -3,9 +3,11 @@ import 'package:flutter/services.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'package:just_audio/just_audio.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/dubbing_user.dart';
 import '../services/blocked_users_service.dart';
 import 'user_detail_page.dart';
+import 'nalani_wallet_screen.dart';
 
 class PopularUsersPage extends StatefulWidget {
   const PopularUsersPage({super.key});
@@ -25,6 +27,8 @@ class _PopularUsersPageState extends State<PopularUsersPage> {
   bool _isPreparingAudio = false;
   StreamSubscription? _playerStateSubscription;
   final BlockedUsersService _blockedUsersService = BlockedUsersService();
+  static const int _unlockCost = 48; // 解锁一个用户消耗48金币
+  static const String _unlockedUsersKey = 'unlocked_users';
 
   @override
   void initState() {
@@ -65,6 +69,94 @@ class _PopularUsersPageState extends State<PopularUsersPage> {
     setState(() {
       _blockedUsers = blockedUsers;
     });
+  }
+
+  // 获取当前金币余额
+  Future<int> _getCoinBalance() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getInt('nalaniCoins') ?? prefs.getInt('nalaniDiamonds') ?? 0;
+  }
+
+  // 检查用户是否已解锁
+  Future<bool> _isUserUnlocked(String userId) async {
+    final prefs = await SharedPreferences.getInstance();
+    final unlockedUsers = prefs.getStringList(_unlockedUsersKey) ?? [];
+    return unlockedUsers.contains(userId);
+  }
+
+  // 解锁用户
+  Future<bool> _unlockUser(String userId) async {
+    final prefs = await SharedPreferences.getInstance();
+    final unlockedUsers = prefs.getStringList(_unlockedUsersKey) ?? [];
+    if (!unlockedUsers.contains(userId)) {
+      unlockedUsers.add(userId);
+      await prefs.setStringList(_unlockedUsersKey, unlockedUsers);
+      
+      // 扣除金币
+      final currentBalance = await _getCoinBalance();
+      await prefs.setInt('nalaniCoins', currentBalance - _unlockCost);
+      return true;
+    }
+    return false;
+  }
+
+  // 检查并处理用户解锁
+  Future<bool> _checkAndUnlockUser(DubbingUser user) async {
+    // 检查是否已解锁
+    final isUnlocked = await _isUserUnlocked(user.userId);
+    if (isUnlocked) {
+      return true; // 已解锁，直接返回true
+    }
+
+    // 获取最新余额
+    final balance = await _getCoinBalance();
+    
+    // 检查余额是否足够
+    if (balance < _unlockCost) {
+      // 余额不足，显示确认对话框
+      final shouldRecharge = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: const Text('Insufficient Balance'),
+          content: Text('Unlocking this user requires $_unlockCost coins. Your current balance is $balance coins.\nWould you like to recharge?'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(false),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(true),
+              child: const Text('Recharge'),
+            ),
+          ],
+        ),
+      );
+
+      if (shouldRecharge == true) {
+        // 跳转到钱包页面
+        await Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const WalletScreen(),
+          ),
+        );
+      }
+      return false;
+    }
+
+    // 余额足够，解锁用户
+    await _unlockUser(user.userId);
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Unlocked successfully! Spent $_unlockCost coins'),
+          backgroundColor: const Color(0xFFFF9538),
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        ),
+      );
+    }
+    return true;
   }
 
   List<DubbingUser> get _filteredUsers {
@@ -369,6 +461,13 @@ class _PopularUsersPageState extends State<PopularUsersPage> {
           _playingUserId = null;
           _isPlaying = false;
         });
+        
+        // 检查并解锁用户
+        final canAccess = await _checkAndUnlockUser(user);
+        if (!canAccess) {
+          return; // 无法访问，可能是余额不足或用户取消了充值
+        }
+        
         // 跳转到用户详情页面
         final result = await Navigator.push(
           context,

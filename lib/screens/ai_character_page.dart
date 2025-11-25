@@ -1,8 +1,168 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'ai_chat_page.dart';
+import 'nalani_vip_screen.dart';
 
-class AICharacterPage extends StatelessWidget {
+class AICharacterPage extends StatefulWidget {
   const AICharacterPage({super.key});
+
+  @override
+  State<AICharacterPage> createState() => _AICharacterPageState();
+}
+
+class _AICharacterPageState extends State<AICharacterPage> {
+  // 检查VIP状态
+  Future<bool> _checkVipStatus() async {
+    final prefs = await SharedPreferences.getInstance();
+    final isVip = prefs.getBool('nalaniIsVip') ?? false;
+    
+    if (!isVip) {
+      return false;
+    }
+    
+    // 检查VIP是否过期
+    final expiryStr = prefs.getString('nalaniVipExpiry');
+    if (expiryStr != null) {
+      final expiry = DateTime.tryParse(expiryStr);
+      if (expiry != null && expiry.isBefore(DateTime.now())) {
+        // VIP已过期
+        await prefs.setBool('nalaniIsVip', false);
+        return false;
+      }
+    }
+    
+    return true;
+  }
+
+  // 检查并处理VIP访问
+  Future<void> _checkAndNavigateToChat(BuildContext context) async {
+    final isVip = await _checkVipStatus();
+    
+    if (isVip) {
+      // VIP用户，直接跳转
+      if (context.mounted) {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => const AIChatPage(),
+          ),
+        );
+      }
+    } else {
+      // 非VIP用户，显示确认对话框
+      if (context.mounted) {
+        final shouldSubscribe = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: const Text('VIP Required'),
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'This feature requires Nalani Premium subscription.\nWould you like to subscribe?',
+                  style: TextStyle(fontSize: 14),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFFF3D0),
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(
+                      color: const Color(0xFFFF9538),
+                      width: 1,
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Subscription Plans:',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF333333),
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Row(
+                        children: [
+                          const Text(
+                            '• Weekly: ',
+                            style: TextStyle(fontSize: 12, color: Color(0xFF666666)),
+                          ),
+                          Text(
+                            '\$12.99/week',
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFFF9538),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 4),
+                      Row(
+                        children: [
+                          const Text(
+                            '• Monthly: ',
+                            style: TextStyle(fontSize: 12, color: Color(0xFF666666)),
+                          ),
+                          Text(
+                            '\$49.99/month',
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFFF9538),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFFF9538),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: const Text(
+                              'POPULAR',
+                              style: TextStyle(
+                                fontSize: 8,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(false),
+                child: const Text('Cancel'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(true),
+                child: const Text('Subscribe'),
+              ),
+            ],
+          ),
+        );
+
+        if (shouldSubscribe == true && context.mounted) {
+          // 跳转到VIP订阅页面
+          await Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const VipScreen(),
+            ),
+          );
+        }
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -275,13 +435,7 @@ class AICharacterPage extends StatelessWidget {
       imagePath: 'assets/nalani_dubbing.webp',
       text: 'Dubbing',
       color: const Color(0xFFFF9538),
-      onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => const AIChatPage(),
-          ),
-        );
-      },
+      onTap: () => _checkAndNavigateToChat(context),
     );
   }
 

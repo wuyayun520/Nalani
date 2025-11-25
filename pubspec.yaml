@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
+version: 1.1.0+1
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -41,6 +41,9 @@ dependencies:
   path_provider: ^2.1.1
   record: ^6.0.0
   http: ^1.1.0
+  url_launcher: ^6.2.2
+  in_app_purchase: ^3.1.15
+  in_app_purchase_storekit: ^0.4.2
 
 dev_dependencies:
   flutter_test:
@@ -90,6 +93,9 @@ flutter:
     - assets/nalani_home_play.webp
     - assets/nalani_message.webp
     - assets/nalani_logoicon.png
+    - assets/nalani_me_vip.webp
+    - assets/nalani_me_wallet.webp
+    - assets/nalani_wallet_coin.webp
     - assets/BaseRestriction/dubbing_users.json
     - assets/BaseRestriction/
     - assets/BaseRestriction/na_001/
